@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<elements>
+  <info>
+		<update version="0.0.1">
+			<file name="race-Abomination.xml" url="" />
+		</update>
+	</info>
+  <element name="Abomination" type="Race" source="Homebrew" id="ID_AW_HB_RACE_ABOMINATION">
+    <description>
+      <p class="flavor">A race born from the happenstance of corrupted aasimar and tieflings resulting in anything from an akward shambling monstrosity to a beautiful amalgamation of the two.</p>
+      <h4>Abomination NAMES</h4>
+      <p>Abominations have names that are specific to their parent races. These names can often be difficult for members of other races to pronounce, so they can adopt nicknames when traveling</p>
+      <p>
+        <span class="feature">Male Names:</span>Akmenos, Amnon, Barakas, Damakos, Ekemon, Iados, Kairon, Leucis, Melech, Mordai, Morthos,<br/>
+        <span class="feature">Female Names:</span>Akta, Anakis, Bryseis, Criella, Damaia, Ea, Kallista,
+	  </p>
+      <h4>ABOMINATION TRAITS</h4>
+      <p>Abominations have the following racial traits.</p>
+      <p>
+        <span class="feature">Ability Score Increase.</span>Your Charisma score increases by 2, and your Intelligence score increases by 1.<br/>
+        <span class="feature">Age.</span>Abomination mature at the same rate as humans.<br/>
+        <span class="feature">Size.</span>Tieflings are about the same size and build as humans. Your size is Medium<br/>
+        <span class="feature">Speed.</span>Your base walking speed is 30 feet. Your base flying speed is 30 feet for up to 30 minutes per rest, time increases to 1 hour at 9th level, and unlimited at 17th level.<br/>
+        <span class="feature">Language.</span>You can speak, read, and write Common, Celestial, and Infernal.<br/>
+        <span class="feature">Abominable Legacy.</span>You know the thaumaturgy and the light cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.<br/>
+        <span class="feature">Abominable Touch.</span>As an action, you can touch a creature and cause it to regain 1 hit point per level + spell modifier; when you do so it creates a bright harmless flame at the point of contact accompanied by a booming sound and smell of sulfur. Once you use this trait, you can't use it again until you finish a long rest.<br/>
+      </p>
+    </description>
+    <sheet alt="Tiefling" display="false" />
+    <setters>
+      <set name="names" type="male">Akmenos, Amnon, Barakas, Damakos, Ekemon, Iados, Kairon, Leucis, Melech, Mordai, Morthos,</set>
+      <set name="names" type="female">Akta, Anakis, Bryseis, Criella, Damaia, Ea, Kallista,</set>
+      <set name="names-format">{{name}}</set>
+      <set name="height">5-6ft</set>
+      <set name="weight">120 lb.</set>
+    </setters>
+    <rules>
+      <stat name="charisma" value="2"/>
+      <stat name="intelligence" value="1"/>
+      <stat name="innate speed" value="30" bonus="base"/>
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+	  <grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+      <grant type="Racial Trait" id="ID_AW_HB_RACIAL_TRAIT_ABOMINATION_ABOMINABLE_LEGACY" />
+      <grant type="Racial Trait" id="ID_AW_HB_RACIAL_TRAIT_ABOMINATION_ABOMINABLE_TOUCH" />
+    </rules>
+  </element>
+
+  <element name="Abominable Legacy" type="Racial Trait" source="HOMEBREW" id="ID_AW_HB_RACIAL_TRAIT_ABOMINATION_ABOMINABLE_LEGACY">
+    <description>
+      <p>You know the thaumaturgy and the light cantrips.</p>
+    </description>
+    <sheet>
+      <description>You know the thaumaturgy and the light cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</description>
+    </sheet>
+  </element>
+
+  <element name="Abominable Touch" type="Racial Trait" source="HOMEBREW" id="ID_AW_HB_RACIAL_TRAIT_ABOMINATION_ABOMINABLE_TOUCH">
+    <description>
+      <p>creature you touch regains 1 hit point per level + spell modifier</p>
+    </description>
+    <sheet>
+      <description>As an action, you can touch a creature and cause it to regain 1 hit point per level + spell modifier; when you do so it creates a bright harmless flame at the point of contact accompanied by a booming sound and smell of sulfur. Once you use this trait, you can't use it again until you finish a long rest.</description>
+    </sheet>
+  </element>
+</elements>
