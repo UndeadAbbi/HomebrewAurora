@@ -2,7 +2,7 @@
 <elements>
   <info>
 		<update version="0.0.1">
-			<file name="race-Abomination.xml" url="" />
+			<file name="race-Abomination.xml" url="https://github.com/UndeadAbbi/HomebrewAurora/blob/198fd4f6c478d3ab21d08e6e139ab39d28c5d647/race-Abomination.xml" />
 		</update>
 	</info>
   <element name="Abomination" type="Race" source="Homebrew" id="ID_AW_HB_RACE_ABOMINATION">
